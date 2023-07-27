@@ -1,0 +1,1 @@
+<%@ Control Language="vb" AutoEventWireup="false" Codebehind="ucColumnaAdicional.ascx.vb" Inherits="Sonda.Net.Nxt.Workflow.WEB.ucColumnaAdicional" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>

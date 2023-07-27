@@ -1,0 +1,92 @@
+.k-menu {
+  color: #003f59;
+  background-color: #327DB7;
+  font: normal 8pt Verdana,Tahoma,Arial,sans-serif;
+  color: white;
+}
+
+.k-menu .k-state-hover:hover
+{
+	background-color: #e18133;
+	color: white;    
+}
+
+.k-menu  .k-group
+{
+	background-color: #327DB7;
+	border: 1px solid  #226DA7;
+}
+
+.k-menu .k-item > .k-link
+{
+    color: white;
+	padding: .3em 0.7em .2em;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid white;
+	overflow: no;
+}
+.k-menu  .k-state-active {
+    background-color: #e18133;
+}
+
+.k-menu-horizontal /* for all horizontal menus */
+{
+   display: inline-block;
+}
+
+.k-menu-principal {
+   position: absolute;
+   left:0px;
+   top:0px;
+}
+
+.k-menu .k-item > .k-link > .k-i-arrow-e {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 2px;
+}
+
+.k-menu .k-icon {
+    background-image: url('sprite_sonda.png');
+    border-color: transparent;
+}
+
+.k-click  {
+    background-color: #D5E5F1;
+}
+
+.k-menu .k-click  > .k-link {
+    color:  #226DA7;
+ }
+ 
+ .k-item {
+ 	white-space:nowrap;
+ }
+ 
+ .k-panelbar .k-content, .k-panelbar .k-panel, .k-panelbar .k-item {
+    overflow-x:hidden; 
+}
+ 
+.k-panelbar .k-content, .k-panelbar .k-panel, .k-panelbar .k-item {
+    border-color: transparent;
+} 
+
+.k-panelbar-expand, .k-panelbar-collapse {
+    position: absolute;
+    top: 5px;
+    right: 187px;
+}
+
+ .k-panel .k-panel > .k-item > .k-panelbar-l2  {
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+
+ .k-panel .k-panel > .k-item > .k-panelbar-l3  {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+

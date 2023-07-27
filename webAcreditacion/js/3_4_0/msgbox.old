@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+		<meta content="Microsoft Visual Studio.NET 7.0" name="GENERATOR">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="../../Styles.css" type="text/css" rel="stylesheet">
+		<META http-equiv="Pragma" content="no-cache">
+       <script src="../3_3_46/jquery.js" language="javascript"></script>
+	   <script src="msgboxhtml.js" language="javascript"></script>
+	   <script src="../3_3_90/defaultpage.js" language="javascript"></script>
+	</head>
+	<body bottomMargin="0" leftMargin="0" topMargin="0" scroll="no" rightMargin="0">
+		<TABLE id="Table1" height="150" cellSpacing="0" cellPadding="0" width="100%" border="0">
+			<TR height="100">
+				<TD width="20%" align="middle">
+					<IMG alt="" id="dlgImg" align="middle"></TD>
+				<TD>
+					<DIV class="nombreCampo" id="lblDescripcion" style="PADDING-RIGHT: 5px; DISPLAY: inline; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; WIDTH: 100%; PADDING-TOP: 5px; POSITION: relative" ms_positioning="FlowLayout"></DIV>
+				</TD>
+			</TR>
+			<TR height="50">
+				<TD vAlign="top" align="middle" width="100%" colSpan="3" height="35">
+					<INPUT id="btn1" onclick="clickit(this)" type="button" value="Aceptar" name="Button1" style="WIDTH: 50px;">
+					<INPUT id="btn2" onclick="clickit(this)" type="button" value="Cancelar" name="button2" style="WIDTH: 65px;">
+					<INPUT id="btn3" onclick="clickit(this)" type="button" value="ok" name="Button3" style="WIDTH: 60px;">
+				</TD>
+			</TR>
+		</TABLE>
+	</body>
+</html>

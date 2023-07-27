@@ -1,0 +1,161 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE;" />
+    <title>Aplicación Sonda.NET v3.0</title>
+    <meta charset="UTF-8">
+    <script src="js/3_100_52/jquery.js" language="javascript"></script>
+    <script src="js/3_3_46/cookies.js" language="javascript"></script>
+    <script src="js/3_3_46/k/js/kendo.core.min.js" language="javascript"></script>
+    <script src="js/3_3_46/k/js/kendo.ui.core.min.js" language="javascript"></script>
+    <script src="js/3_100_70/main.js" language="javascript"></script>
+    <script src="js/3_3_50/jquery.bgiframe.js" language="javascript"></script>
+    <script src="js\2_9_9_1\FramesetParameters.js" language="javascript"></script>
+    <link rel="stylesheet" href="js/3_3_46/k/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="js/3_3_46/k/styles/kendo.blueopal.min.css">
+    <link rel="stylesheet" href="js/3_4_0/kendo.sonda.css">
+    <link rel="stylesheet" href="MainAfp.css">
+</head>
+<body>
+    <div id="spinner"></div>
+    <DIV id="rf_H" style="POSITION: absolute; LEFT: 300px; Z-INDEX: 1000; DISPLAY: none; TOP: 700px; BACKGROUND-COLOR: #ffffff">
+        <IMG id="rf_H_img" src="img/menu/arrow_dl.gif" Title="LOCALHOST">
+    </DIV>
+    <DIV id="rf_V" style="POSITION: absolute; LEFT: 300px; Z-INDEX: 1000; DISPLAY: none; TOP: 0px; BACKGROUND-COLOR: #ffffff">
+        <IMG id="rf_V_img" src="img/menu/arrow_tr.gif" Title="LOCALHOST">
+    </DIV>
+    <table id="content" style="position:absolute;top:0px;left:0px;">
+        <colgroup>
+            <col id="col1" style="width:0px">
+            <col id="col2">
+        </colgroup>
+        <tr>
+            <td id="header" colspan="2">
+                <table id="banner" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="header_izq">
+                            <span class="logo" id="logo"> </span>
+                            <span id="ambiente"> </span>
+                        </td>
+                        <td class="header_cen">
+                            <div id="info">
+                                <div class="botonera">
+                                    <a href="default.aspx?url=webAtencionPublico/SapPrincipal" target="iframe_body" id="btn_home_cliente">
+                                        <span class="header_text">Home Cliente</span>
+                                        <span class="header_text">
+                                            <img src="img/afp/ico_home.png" />
+                                        </span>
+                                    </a>
+
+                                    <a href="default.aspx?url=webAtencionPublico/SapEmplPrinicpal" target="iframe_body" id="btn_home_empleador">
+                                        <span class="header_text">Home Empleador</span>
+                                        <span class="header_text">
+                                            <img src="img/afp/ico_home.png" />
+                                        </span>
+                                    </a>
+
+                                    <a href="default.aspx?url=webProcesos/PrcDefProceConsul&FUN=PROCONPRO" target="iframe_body">
+                                        <span class="header_text">Procesos</span>
+                                        <span class="header_text">
+                                            <img src="img/afp/procesos.png" />
+                                        </span>
+                                    </a>
+                                    <a href="default.aspx?url=MisReportes" target="iframe_body">
+                                        <span class="header_text">Reportes</span>
+                                        <span class="header_text">
+                                            <img src="img/afp/reportes.png" />
+                                        </span>
+                                    </a>
+
+                                    <div id="tipo-impresion">
+                                        <p>Tipo Impresion:</p>
+                                        <div class="opcion-impresion">
+                                            <input name="tipo-impresion" onclick="" type="radio" value="DIRECTA">
+                                            <label for="tipo-impresion">Directa</label>
+                                        </div>
+                                        <div class="opcion-impresion">
+                                            <input name="tipo-impresion" onclick="" type="radio" value="PDF">
+                                            <label for="tipo-impresion">PDF</label>
+                                        </div>
+                                    </div>
+
+                                    <a href="#" id="link_cambiar_imagen">
+                                        <div class="datos-usuario">
+                                            <span class="header_text imagen-usuario">
+                                                <img src="img/sondanet/anonymous.jpg" style="width:40px; height:40px;" id="imagen_usuario" />
+                                            </span>
+                                            <span class="header_text" id="nombre"></span>
+                                            <span class="header_text" id="agencia"></span>
+                                            <span class="header_text" id="fecha-hora"></span>
+                                        </div>
+                                    </a>
+                                    <a href="default.aspx?url=Login" target="iframe_body">
+                                        <span class="header_text">Salir</span>
+                                        <span class="header_text">
+                                            <img src="img/afp/salir.png" />
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="header_der">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td id="menu_h" colspan="2" class="menu">
+                <ul class="k-menu-principal" id="k_menu_h" style="display:none;position:absolute;"></ul>
+            </td>
+        </tr>
+        <tr>
+            <td id="menu_v">
+                <ul class="k-menu-principal" id="k_menu_v" style="display:none;position:absolute;"></ul>
+                <div id="k_panelbar_container">
+                    <div id="k_panelbar"></div>
+                </div>
+            </td>
+            <td>
+                <iframe id="iframe_body" name="iframe_body" width="100%" frameborder="0" tabindex="-1"></iframe>
+            </td>
+        </tr>
+    </table>
+
+    <script language="javascript">
+
+        // var HEADER_HEIGHT = 65;
+        // var H_MENU_HEIGHT = 24;
+        var V_MENU_WIDTH = 212;
+        var ICON_WIDTH = 16;
+        var ICON_HEIGHT = 16;
+        var BANER_IZQ_WIDTH = 314;
+        var V_SCROLL_WIDTH = 17;
+        var LOGO_HEIGHT = 0;
+
+        $(window).resize(doDelayedLayout);
+        $(document).ready(doLoad);
+
+        $(document).ready(function () {
+
+            var aux = "";
+
+            if (getParameter(framesetQuery, "url")) aux = aux + "&url=" + getParameter(framesetQuery, "url");
+            if (getParameter(framesetQuery, "PARURL")) aux = aux + "&PARURL=" + getParameter(framesetQuery, "PARURL");
+            if (getParameter(framesetQuery, "FUN")) aux = aux + "&FUN=" + getParameter(framesetQuery, "FUN");
+            if (getParameter(framesetQuery, "MODO")) aux = aux + "&MODO=" + getParameter(framesetQuery, "MODO");
+            if (getParameter(framesetQuery, "RUT")) aux = aux + "&RUT=" + getParameter(framesetQuery, "RUT");
+
+            sntLoadPage("default.aspx?x=" + Math.uuid(32) + aux);
+
+            $("#link_cambiar_imagen").mousedown(function (event) {
+                showModalDialog('defaultblank.aspx?url=webcontrolaccesousuario/usuusuarioimageneditar&FUN=USUMANTUSUARIOS', window, 'dialogWidth:300px;dialogHeight:400px;status:0;resizable:0;scroll:0;dialogLeft=' + Math.round((screen.availWidth - 300) / 2) + 'px;dialogTop=' + Math.round((screen.availHeight - 400) / 2) + 'px');
+                location.reload(true);
+                return false;
+            });
+
+
+        });
+
+    </script>
+</body>
+</html>

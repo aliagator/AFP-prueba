@@ -1,0 +1,352 @@
+.k-menu {
+    color: #003f59;
+    background-color: #327DB7;
+    color: white;
+}
+
+.k-menu .k-state-hover:hover {
+    background-color: #e18133;
+    color: white;
+}
+
+.k-menu .k-group {
+    background-color: #327DB7;
+    border: 1px solid #226DA7;
+}
+
+.k-menu .k-item>.k-link {
+    color: white;
+    padding: .3em 0.7em .2em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    overflow: no;
+}
+
+.k-menu .k-state-active {
+    background-color: #e18133;
+}
+
+.k-menu-horizontal{
+    display: inline-block;
+}
+
+.k-menu-principal {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.k-tabstrip-items .k-state-hover .k-link,
+.k-panelbar>li.k-state-hover>.k-link,
+.k-panelbar>li.k-state-default>.k-link.k-state-hover {
+    color: #f7941e;
+}
+
+.k-menu .k-item>.k-link>.k-i-arrow-e {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 2px;
+}
+
+.k-menu .k-icon {
+    background-image: url('sprite_sonda.png');
+    border-color: transparent;
+}
+
+.k-click {
+    background-color: #D5E5F1;
+}
+
+.k-menu .k-click>.k-link {
+    color: #226DA7;
+}
+
+.k-item {
+    white-space: nowrap;
+}
+
+.k-panelbar .k-content,
+.k-panelbar .k-panel,
+.k-panelbar .k-item {
+    overflow-x: hidden;
+}
+
+.k-panelbar .k-content,
+.k-panelbar .k-panel,
+.k-panelbar .k-item {
+    border-color: transparent;
+}
+
+.k-panelbar-expand,
+.k-panelbar-collapse {
+    position: absolute;
+    top: 2px;
+}
+
+.k-panelbar .k-icon {
+    background-image: none !important;
+    border-color: transparent;
+    width: 14px;
+    left: 4px;
+}
+
+.k-icon.k-i-arrow-s::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #F39A05;
+    border-right: 0px solid transparent;
+}
+
+.k-icon.k-i-arrow-n {
+    left: 1px;
+    top: 5px;
+}
+
+.k-icon.k-i-arrow-n.k-panelbar-collapse::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    border-top: 5px solid #fff;
+    border-bottom: 0px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.k-header {
+    border: none !important;
+    background-image: none !important;
+}
+
+.k-panel .k-i-arrow-n,
+.k-panel .k-i-arrow-s {
+    top: 1px;
+}
+
+#k_panelbar .k-button:hover,
+#k_panelbar .k-button:focus,
+#k_panelbar .k-button.k-state-focused,
+#k_panelbar .k-textbox:hover,
+#k_panelbar .k-state-selected.k-state-hover,
+#k_panelbar .k-state-hover,
+#k_panelbar .k-state-hover:hover,
+#k_panelbar .k-pager-wrap .k-link:hover,
+#k_panelbar .k-other-month.k-state-hover .k-link,
+#k_panelbar div.k-imagebrowser-dropzone em,
+#k_panelbar .k-draghandle:hover {
+    background-image: none;
+}
+
+#k_panelbar .k-state-focused.k-state-hover {
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.k-panelbar .k-link:hover {
+    color: #F39A05;
+}
+
+/* primer nivel */
+
+.k-panelbar>.k-item>.k-link {
+    display: block;
+    position: relative;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 0 1.3em;
+    line-height: 2.34em;
+    text-decoration: none;
+    zoom: 1;
+    border: none !important;
+}
+
+#k_panelbar li {
+    background-color: inherit;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+#k_panelbar .k-link{
+    font-size: 0.65em;
+}
+
+/* 2do nivel */
+
+.k-panel>.k-item>.k-link {
+    display: block;
+    position: relative;
+    padding: 0 1.8em;
+    line-height: 2em;
+    text-decoration: none;
+    zoom: 1;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(7, 87, 134, 0.3);
+}
+
+.k-panel>.k-item:last-child>.k-link {
+    border-bottom: none;
+}
+
+.k-panelbar-l2 .k-panelbar-expand,
+.k-panelbar-l2 .k-panelbar-collapse {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+}
+
+.k-panelbar-l2 .k-panelbar-collapse.k-i-arrow-n {
+    top: 3px
+}
+
+#k_panelbar>li>ul {
+    background-color: #0367a2;
+}
+
+/* 3er nivel */
+
+.k-panel .k-panel>.k-item>.k-link {
+    padding-left: 2.8em;
+}
+
+.k-panelbar-l3 .k-panelbar-expand,
+.k-panelbar-l3 .k-panelbar-collapse {
+    position: absolute;
+    top: 1px;
+    left: 5px;
+}
+
+#k_panelbar>li>ul>li .k-state-selected {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#k_panelbar>li>ul>li>ul {
+    background-color: #3c90c1;
+}
+
+/*4to nivel */
+
+.k-panel .k-panel .k-panel>.k-item>.k-link {
+    padding: 0em 4em;
+    border-bottom: 1px solid #4d8fb58a !important;
+}
+
+.k-panel .k-panel .k-panel>.k-item:last-child>.k-link {
+    border-bottom: none;
+}
+
+.k-panelbar-l4 .k-panelbar-expand,
+.k-panelbar-l4 .k-panelbar-collapse {
+    position: absolute;
+    top: 5px;
+    right: 182px;
+}
+
+#k_panelbar>li>ul>li>ul>li>ul {
+    background-color: #6fabce;
+}
+
+/*5to nivel */
+
+.k-panel .k-panel .k-panel .k-panel>.k-item>.k-link {
+    padding-left: 3.8em;
+}
+
+.k-panelbar-l5 .k-panelbar-expand,
+.k-panelbar-l5 .k-panelbar-collapse {
+    position: absolute;
+    top: 5px;
+    right: 177px;
+}
+
+#k_panelbar>li>ul>li>ul>li>ul>li>ul {
+    background-color: #98c8e4;
+}
+
+.k-header.k-tabstrip {
+    background-color: transparent;
+}
+
+.k-header.k-tabstrip:focus{
+    box-shadow: none;
+}
+
+.k-tabstrip-items{
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.k-tabstrip .k-content.k-state-active {
+    display: none !important;
+}
+
+ul.k-tabstrip-items>li.k-state-default {
+    font-size: 1em;
+    background-color: #bbbfce;
+    background-image: none;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+    margin-right: 5px;
+}
+
+ul.k-tabstrip-items>li.k-state-default:last-child {
+    margin-right: 0px;
+}
+
+ul.k-tabstrip-items>li.k-state-default .k-link {
+    color: #ffffff;
+    border-radius: 0px;
+    padding: 0px 10px;
+}
+
+ul.k-tabstrip-items>li.k-state-default.k-state-active {
+    background-color: #61698c;
+}
+
+.k-header.k-datepicker{
+    background-color: transparent;
+}
+
+.k-header.k-datepicker .k-state-default{
+    background-color: transparent;
+    border: none;
+}
+
+.k-header.k-datepicker .k-state-default input{
+    background-color: #e8eaef;
+    border-radius: 0px;
+    height: 16px;
+    margin-top: 4px;
+}
+
+.k-header.k-datepicker .k-state-default>.k-select{
+    border: none !important;
+}
+
+.k-overlay{
+    background-color: #003d6d;
+    opacity: 0.5 !important;
+}
+
+.k-widget.k-window{
+    border: 3px solid #f58220;
+    box-shadow: none;
+    border-radius: 0px;
+    padding-top: 0px;
+}
+
+.k-window-titlebar.k-header{
+    /* display: none; */
+}

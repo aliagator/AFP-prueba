@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp codebase="" href="" >
+    <information>
+        <title>RawCliPrint2</title>
+        <vendor>Sonda</vendor>
+        <homepage href=""/>
+        <description>Componente para impresion en matriz de punto.</description>
+        <description kind="short">Componente para impresion en matriz de punto.</description>
+    </information>
+    <update check="always"/>
+    <security>
+<all-permissions/>
+</security>
+    <resources>
+        <j2se version="1.6+"/>
+        <jar href="Nxt/PrintDotMatrix/RawCliPrint2.jar" main="true"/>
+    </resources>
+    <applet-desc height="300" main-class="RawCliPrint2" name="RawCliPrint2" width="300">
+	<param name="SessionID" value=""/>
+	<param name="DataURL" value=""/>
+    <param name="TextToPrint" value=""/>
+    <param name="Printer" value=""/>
+	 <param name="Encoding" value=""/>
+</applet-desc>
+</jnlp>

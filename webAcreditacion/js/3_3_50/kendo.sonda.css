@@ -1,0 +1,42 @@
+.k-menu {
+  color: #003f59;
+  background-color: #327DB7;
+  font: normal 8pt Verdana,Tahoma,Arial,sans-serif;
+  color: white;
+}
+
+.k-menu .k-state-hover:hover
+{
+	background-color: #e18133;
+	color: white;    
+}
+
+.k-menu  .k-group
+{
+	background-color: #327DB7;
+	border: 1px solid white;
+}
+
+.k-menu .k-item > .k-link
+{
+    color: white;
+	padding: .3em 0.7em .2em;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid white;
+}
+.k-menu  .k-state-active {
+    background-color: #e18133;
+}
+
+.k-menu-horizontal /* for all horizontal menus */
+{
+   display: inline-block;
+}
+
+.k-menu-principal {
+   position: absolute;
+   left:0px;
+   top:0px;
+}

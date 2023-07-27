@@ -1,0 +1,2773 @@
+/* 
+#f58220 -> NARANJO
+#262262 -> AZUL
+#61698c -> GRIS1
+#bbbfce -> GRIS2
+#e8eaef -> GRIS3 
+*/
+
+/* Default CSS Stylesheet for a new Web Application project */
+
+body,
+body input {
+    word-spacing: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+input {
+    margin: 0px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label{
+    font-size: 0.8em;
+    margin-left: 2px;
+    font-weight: 300;
+}
+
+.C_left2,
+.C_right2{
+    padding: 0px 8px;
+}
+.TablaGrilla {
+    border: solid 1px lightgrey;
+    width: 100%;
+}
+
+form > table{
+   /* box-shadow: 0px 0px 0px 1px #f58220; borra borde*/
+    padding: 0px;
+   /* border: 15px solid white; 2663*/
+}
+
+form > table td.C_bottom{
+    padding-bottom: 10px;
+}
+
+table{
+    border: none;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+table td{
+   /* border: none; 2664*/
+}
+
+table td a{
+    text-decoration: none;
+}
+
+.DataGridTitulo {
+    color: #262262;
+    text-decoration: none;
+    background-color: #e8eaef;
+    text-align: center;
+    border: none;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.DataGridItem,
+.DataGridAlternatingItem {
+    color: black;
+    background-color: #FEF5E7;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.DataGridAlternatingItem {
+    background-color: #FEEACF;
+    text-decoration: none;
+}
+
+.DataGridItem td,
+.DataGridAlternatingItem td{
+    padding: 5px 10px 5px 0px;
+}
+
+.DataGridMarkedItem {
+    color: white;
+    text-decoration: none;
+    background-color: #e06060;
+    border: solid 1px lightgrey;
+}
+
+.DataGridPager {
+    border: none;
+    margin-top: 10px;
+}
+
+.DataGridPager td{
+    font-size: 15px;
+}
+
+.DataGridPager a:link,
+.DataGridPager a:visited,
+.DataGridPager a:active {
+    text-decoration: none;
+    color: #888;
+    margin: 0px 2px;
+    font-size: 15px;
+}
+
+.TablaCabecera {
+    border-top: solid 1px #009999;
+    width: 100%;
+    border-bottom: solid 1px #009999;
+    background-color: transparent;
+}
+
+.TablaContenido {
+    border: solid 1px #009999;
+    width: 100%;
+    background-color: transparent;
+}
+
+.FondoGrupo {
+    background-color: #E3E3E3;
+    text-decoration: none;
+}
+
+.Titulo {
+    color: black;
+}
+
+.NotaMediana {
+    color: #336609;
+    text-decoration: none;
+}
+
+.HyperLink {
+    color: #336609;
+    text-decoration: underline;
+}
+
+.HyperLink img{
+    /*width: 15px; 2663*/
+   /* margin: 0px 5px;*/
+}
+
+.HyperLink.ico-doc img{
+    width: 20px;
+}
+
+/* .HyperLink img{
+    display: inline-block;
+    height: 45px;
+    margin: 0px 5px;
+}
+
+.HyperLink p img{
+    display: inline-block;
+    height: auto;
+    margin: auto;
+} */
+
+.SubTitulo {
+    color: black;
+    text-decoration: none;
+}
+
+.NotaChica {
+    text-decoration: none;
+    color: #336609;
+}
+
+.InfoBar {
+    color: #669900;
+    background-color: transparent;
+}
+
+.InfoBox {
+    border-color: #336600;
+}
+
+.nostyle {
+    color: transparent;
+    background-color: yellow;
+}
+
+.form {
+    color: black;
+    text-decoration: none;
+}
+
+a.btnNotaGrande {
+    display: inline-block;
+}
+
+.btnNotaGrande {
+    padding-right: 0px;
+    padding-left: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    background-image: none;
+    border-bottom-color: limegreen;
+    padding-bottom: 0px;
+    margin: 1px 0px 1px 1px;
+    color: darkgreen;
+    border-top-style: solid;
+    border-top-color: limegreen;
+    padding-top: 0px;
+    border-right-style: solid;
+    border-left-style: solid;
+    background-color: greenyellow;
+    text-decoration: none;
+    border-right-color: limegreen;
+    border-bottom-style: solid;
+}
+
+.txt-footer {
+    font-weight: normal;
+    font-size: 10px;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.btnBuscarLargo {
+    display: inline-block;
+    background-size: 167px 18px;
+    width: 167px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnBuscarLargo {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/BuscarLargo.gif);
+    border: none;
+    width: 167px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 13px;
+}
+
+a.btnBuscar12 {
+    display: inline-block;
+    background-size: 120px 18px;
+    background-repeat: no-repeat;
+    width: 120px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnBuscar12 {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_buscar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    padding: 5px 5px 5px 25px;
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnBuscar10 {
+    display: inline-block;
+    background-size: 102px 18px;
+    background-repeat: no-repeat;
+    width: 102px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnBuscar10 {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_buscar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.btnCopia, .BtnCopia{
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_copia.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 30px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnActualizar {
+    display: inline-block;
+    background-size: 110px 18px;
+    width: 110px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnActualizar {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_cargar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnConsDocto {
+    display: inline-block;
+    background-size: 125px 18px;
+    width: 200px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnConsDocto {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/verDetalle200.gif);
+    border: none;
+    width: 200px;
+    height: 18px;
+    text-transform: none;
+    color: #333333;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 8px
+}
+
+a.BtnContabilizar {
+    display: inline-block;
+    background-size: 125px 18px;
+    width: 125px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.BtnContabilizar {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/contabilidad.gif);
+    border: none;
+    width: 125px;
+    height: 18px;
+    text-transform: none;
+    color: #333333;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 8px
+}
+
+a.btnSiguiente {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnSiguiente {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_siguiente.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnAnterior {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnAnterior {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_anterior.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnDesasociar {
+    display: inline-block;
+    background-size: 103px 18px;
+    width: 103px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnDesasociar {
+    border-color: transparent;
+    background-color: Transparent;
+    background-image: url(img/btn/mayor2.gif);
+    border: none;
+    font-size: 11px;
+    font-weight: bold;
+    width: 103px;
+    margin-bottom: 0px;
+}
+
+a.btnDasociar {
+    display: inline-block;
+}
+
+.btnDasociar {
+    border-color: transparent;
+    background-color: Transparent;
+    background-image: url(img/btn/menor2.gif);
+    border: none;
+    font-size: 11px;
+    font-weight: bold;
+    width: 103px;
+    margin-bottom: 0px;
+}
+
+a.btnBuscar {
+    display: inline-block;
+    background-size: 75px 18px;
+    background-repeat: no-repeat;
+    width: 75px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnBuscar {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_buscar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 25px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnVolver,
+a.btnvolver {
+    display: inline-block;
+    background-size: 75px 18px;
+    width: 75px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+a.btnImprimir {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnImprimir,
+.btnimprimir {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_imprimir.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnImprimir180 {
+    display: inline-block;
+    background-size: 180px 18px;
+    width: 180px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnImprimir180,
+.btnimprimir180 {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/imprimir180.gif);
+    border: none;
+    width: 180px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+a.btnGenerar,
+a.btngenerar {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnVolver,
+.btnvolver,
+.Btnvolver {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_volver.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.btnGenerar,
+.btngenerar {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_generar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnGrabar,
+a.btngrabar {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnGrabar,
+.btngrabar {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_guardar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnAsignar,
+a.btnasignar {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnAsignar,
+.btnasignar {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/asignar.gif);
+    border: none;
+    width: 91px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 13px;
+}
+
+a.btnVerDetalle,
+a.btnverdetalle {
+    display: inline-block;
+    background-size: 110px 18px;
+    width: 110px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnVerDetalle,
+.btnverdetalle {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/verDetalle.gif);
+    border: none;
+    width: 110px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 13px;
+}
+
+a.btnVerDetalle150,
+a.btnverdetalle150 {
+    display: inline-block;
+    background-size: 150px 18px;
+    width: 150px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnVerDetalle150,
+.btnverdetalle150 {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/verDetalle150.gif);
+    border: none;
+    width: 150px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 13px;
+    margin-bottom: 50px;
+}
+
+a.btnVerDetalleChico,
+a.btnverdetallechico {
+    display: inline-block;
+    background-size: 120px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+input.btnVerDetalleChico,
+input.btnverdetallechico {
+    display: inline-block;
+    background-size: 120px 18px;
+    width: 121px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnVerDetalleChico,
+.btnverdetallechico {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/verDetalleChico.gif);
+    color: Silver;
+    border: none;
+    width: 91px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+}
+
+a.btnNuevo,
+a.btnnuevo {
+    display: inline-block;
+}
+
+.btnNuevo,
+.btnnuevo {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_nuevo.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 18px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnNuevoLargo,
+a.btnnuevolargo {
+    display: inline-block;
+    background-size: 150px 18px;
+    width: 150px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnNuevoLargo,
+.btnnuevolargo {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/NuevoLargo.gif);
+    border: none;
+    width: 150px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 25px;
+}
+
+a.BtnEliminar,
+a.btneliminar {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+a.btnEliminar,
+a.btneliminar {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnEliminar,
+.btneliminar,
+.BtnEliminar {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_eliminar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnCerrar,
+a.btncerrar {
+    display: inline-block;
+    background-size: 85px 18px;
+    width: 85px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnCerrar,
+.btncerrar {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/cerrar.gif);
+    border: none;
+    width: 85px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 8px;
+}
+
+a.btnAyuda,
+a.btnayuda {
+    display: inline-block;
+    background-size: 37px 18px;
+    width: 37px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnAyuda,
+.btnayuda {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/ayuda.gif);
+    border: none;
+    width: 37px;
+    height: 18px;
+}
+
+a.btnLimpiar,
+a.btnlimpiar {
+    display: inline-block;
+    background-size: 76px 18px;
+    width: 76px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnLimpiar,
+.btnlimpiar {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/limpiar.gif);
+    border: none;
+    width: 76px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 8px;
+}
+
+a.btnDesasociarTodos,
+a.btndesasociartodos {
+    display: inline-block;
+    background-size: 37px 18px;
+    width: 37px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnDesasociarTodos,
+.btndesasociartodos {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/mayor.gif);
+    border: none;
+    width: 37px;
+    height: 18px;
+    padding-right: 8px;
+}
+
+a.btnAsociarTodos,
+a.btnasociartodos {
+    display: inline-block;
+    background-size: 37px 18px;
+    width: 37px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnAsociarTodos,
+.btnasociartodos {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/menor.gif);
+    border: none;
+    width: 37px;
+    height: 18px;
+    padding-right: 8px;
+}
+
+a.btnProcesar,
+a.btnprocesar {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnProcesar,
+.btnprocesar {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_procesar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnCancelar,
+a.btncancelar {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnCancelar,
+.btncancelar {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/cancelar.gif);
+    border: none;
+    width: 91px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 8px;
+}
+
+a.btnAprobar,
+a.btnaprobar {
+    display: inline-block;
+}
+
+.btnAprobar,
+.btnaprobar {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_confirmar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnb_deposito {
+    display: inline-block;
+    background-size: 116px 18px;
+    width: 116px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnb_deposito {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/b_deposito.gif);
+    border: none;
+    width: 116px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    /*padding-right: 60px;*/
+}
+
+a.btn_deposito1 {
+    display: inline-block;
+    background-size: 111px 18px;
+    width: 111px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btn_deposito1 {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/b_deposito1.gif);
+    border: none;
+    width: 111px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    /*padding-right: 60px;*/
+}
+
+a.btn_leerdocumento {
+    display: inline-block;
+    background-size: 162px 18px;
+    width: 162px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btn_leerdocumento {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/b_LeerDocumento.gif);
+    border: none;
+    width: 162px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 11px;
+}
+
+a.btnSeleccionar2,
+a.btnseleccionar2 {
+    display: inline-block;
+    background-size: 118px 18px;
+    width: 118px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnSeleccionar2,
+.btnseleccionar2 {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_confirmar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.btnImportar,
+a.btnimportar {
+    display: inline-block;
+    background-size: 110px 18px;
+    width: 110px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnImportar,
+.btnimportar {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/Importar.gif);
+    border: none;
+    width: 110px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 11px;
+}
+
+a.btnVerDetalle2,
+a.btnverdetalle2 {
+    display: inline-block;
+    background-size: 125px 18px;
+    width: 125px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnVerDetalle2,
+.btnverdetalle2 {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_detalle.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.BtnVerDetalle2,
+a.btnverdetalle2 {
+    display: inline-block;
+    background-size: 125px 18px;
+    width: 125px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.BtnVerDetalle2,
+.btnverdetalle2 {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/verDetalle2.gif);
+    border: none;
+    width: 125px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 25px;
+}
+
+a.btnSinTexto,
+a.btnsintexto {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnSinTexto,
+.btnsintexto {
+    background-color: transparent;
+    /* background-image: url(img/2018/btn/ico_volver.png); */
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+a.SinTexto90,
+a.sintexto90 {
+    display: inline-block;
+    background-size: 90px 18px;
+    width: 90px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.SinTexto90,
+.sintexto90 {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/SinTexto110.gif);
+    border: none;
+    width: 90px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 11px;
+}
+
+a.SinTexto110,
+a.sintexto110 {
+    background-color: transparent;
+    /* background-image: url(img/2018/btn/ico_volver.png); */
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.SinTexto110,
+.sintexto110 {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_circulo.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+a.SinTexto150,
+a.sintexto150 {
+    display: inline-block;
+    background-size: 150px 18px;
+    width: 150px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.SinTexto150,
+.sintexto150 {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/SinTexto150.gif);
+    border: none;
+    width: 150px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 11px;
+}
+
+a.SinTexto170,
+a.sintexto170 {
+    display: inline-block;
+    background-size: 170px 18px;
+    background-repeat: no-repeat;
+    width: 170px;
+    padding-left: 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.SinTexto170,
+.sintexto170 {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/SinTexto170.gif);
+    border: none;
+    width: 170px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 11px;
+}
+
+a.SinTexto200,
+a.sintexto200 {
+    display: inline-block;
+    background-size: 200px 18px;
+    width: 200px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.SinTexto200,
+.sintexto200 {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/SinTexto200.gif);
+    border: none;
+    width: 200px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 11px;
+}
+
+a.btnMensajeria,
+a.btnmensajeria {
+    display: inline-block;
+    background-size: 71px 18px;
+    width: 71px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnMensajeria,
+.btnmensajeria {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/btn_Mail.gif);
+    border: none;
+    width: 71px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 11px;
+}
+
+a.mayor2 {
+    display: inline-block;
+    background-size: 37px 18px;
+    width: 37px;
+    padding: 0px 0px 0px 30px !important;
+    text-align: left;
+    text-decoration: none;
+}
+
+.mayor2 {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/mayor2.gif);
+    border: none;
+    width: 37px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0px 11px 0px 0px !important;
+}
+
+a.menor2 {
+    display: inline-block;
+    background-size: 37px 18px;
+    width: 37px;
+    padding: 0px 0px 0px 30px !important;
+    text-align: left;
+    text-decoration: none;
+}
+
+.menor2 {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/menor2.gif);
+    border: none;
+    width: 37px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0px 11px 0px 0px !important;
+}
+
+a.btnReversar,
+a.btnreversar {
+    display: inline-block;
+    background-size: 111px 18px;
+    width: 111px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnReversar,
+.btnreversar {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/reversar.gif);
+    border: none;
+    width: 111px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+a.btnSubir,
+a.btnsubir {
+    display: inline-block;
+    background-size: 18px 37px;
+    width: 18px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnSubir,
+.btnsubir {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/Subir.gif);
+    border: none;
+    width: 18px;
+    height: 37px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 11px;
+}
+
+a.btnBajar,
+a.btnbajar {
+    display: inline-block;
+    background-size: 18px 37px;
+    width: 18px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnBajar,
+.btnbajar {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/Bajar.gif);
+    border: none;
+    width: 18px;
+    height: 37px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 11px;
+}
+
+a.btnMore,
+a.btnmore {
+    display: inline-block;
+    background-size: 37px 18px;
+    width: 37px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnMore,
+.btnmore {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: url(img/btn/more_button.gif);
+    border: none;
+    width: 37px;
+    height: 18px;
+    text-transform: none;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 11px;
+    text-decoration: none;
+}
+
+.unnamed1 {
+    width: 450px;
+}
+
+.tit_left {
+    background-color: #f58220;
+    height: 23px;
+    width: 16px;
+}
+
+.tit_center {
+    background-color: #262262;
+    color: white;
+    text-decoration: none;
+    height: 23px;
+    padding-left: 5px;
+}
+
+.tablatit {
+    height: 28px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.txt {
+    line-height: 24px;
+    color: #333333;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.inputtext {
+    line-height: normal;
+    color: #666666;
+    text-decoration: none;
+    background-color: white;
+    border: solid 1px #00498C;
+}
+
+a.b_conectar {
+    display: inline-block;
+}
+
+.b_conectar {
+    border-color: transparent;
+    background-image: url(IMG/conectar.gif);
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 18px;
+    width: 100px;
+    padding-left: 10px;
+}
+
+.tableContenido1 {
+    border: solid 1px lightgrey;
+    color: #006699;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.titppal {
+    height: 25px;
+    width: 0px;
+    background-color: #f58220
+}
+
+.titppal2 {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 5px;
+    background-color: #f58220;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.labelCenter {
+    color: black;
+    text-decoration: none;
+    background-color: #D5E5F1;
+    text-align: center;
+    padding: 2px 0px 2px 0px;
+    border: solid 1px white;
+}
+
+.CasillaCenter {
+    color: black;
+    text-decoration: none;
+    background-color: #F6F9FB;
+    text-align: center;
+    padding: 2px 0px 2px 0px;
+    border: solid 1px white;
+}
+
+.topGrilla {
+    color: black;
+    text-decoration: none;
+    background-color: #EBBB5B;
+    text-align: center;
+    border: solid 1px white;
+    padding: 2px;
+}
+
+.filaGrilla1 {
+    color: black;
+    text-decoration: none;
+    background-color: #FEF5E7;
+    padding: 2px;
+    border: solid 1px white;
+}
+
+.filaGrilla2 {
+    color: black;
+    text-decoration: none;
+    background-color: #FEEACF;
+    padding: 2px;
+    border: solid 1px white;
+}
+
+a.b_ctasCtes {
+    display: inline-block;
+}
+
+.b_ctasCtes {
+    border-color: transparent;
+    background-image: url(img/2018/btn/ico_cuentas_corrientes.png);
+    background-repeat: no-repeat;
+    text-align: right;
+    height: 30px;
+    padding: 0px 10px 0px 30px;
+    background-size: 25px;
+    background-color: transparent;
+    background-position: 2% 50%;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+a.b_personal {
+    display: inline-block;
+}
+
+.b_personal {
+    border-color: transparent;
+    background-image: url(img/2018/btn/ico_cuenta_personal.png);
+    background-repeat: no-repeat;
+    text-align: right;
+    height: 30px;
+    padding: 0px 10px 0px 30px;
+    background-size: 25px;
+    background-color: transparent;
+    background-position: 2% 50%;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+a.b_tesoreria {
+    display: inline-block;
+}
+
+.b_tesoreria {
+    border-color: transparent;
+    background-image: url(img/2018/btn/ico_tesoreria.png);
+    background-repeat: no-repeat;
+    text-align: right;
+    height: 30px;
+    padding: 0px 10px 0px 30px;
+    background-size: 25px;
+    background-color: transparent;
+    background-position: 2% 50%;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+a.b_contabilidad {
+    display: inline-block;
+}
+
+.b_contabilidad {
+    border-color: transparent;
+    background-image: url(img/2018/btn/ico_atributoscontables.png);
+    background-repeat: no-repeat;
+    text-align: right;
+    height: 30px;
+    padding: 0px 10px 0px 30px;
+    background-size: 25px;
+    background-color: transparent;
+    background-position: 2% 50%;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.label,
+.Label {
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding: 0px;
+    font-size: 0.9em;
+}
+
+.Casilla,
+.casilla {
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding: 0px;
+}
+
+a.b_asociar {
+    display: inline-block;
+}
+
+.b_asociar {
+    border-color: transparent;
+    background-image: url(img/btn/btnAsociar.gif);
+    width: 33px;
+    height: 18px;
+    text-align: center;
+}
+
+a.b_asociar1 {
+    display: inline-block;
+}
+
+.b_asociar1 {
+    border-color: transparent;
+    background-image: url(img/btn/btnAsociar1.gif);
+    width: 33px;
+    height: 18px;
+    text-align: center;
+}
+
+a.b_asociar2 {
+    display: inline-block;
+}
+
+.b_asociar2 {
+    border-color: transparent;
+    background-image: url(img/btn/btnAsociar2.gif);
+    width: 33px;
+    height: 18px;
+    text-align: center;
+}
+
+.Tab_up {
+    color: #003366;
+    background-image: url(IMG/tab_activo.gif);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    text-align: center;
+    height: 25px;
+    width: 200px
+}
+
+.Tab_over {
+    color: white;
+    background-image: url(IMG/tab_over.gif);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    text-align: center;
+    height: 25px;
+    width: 200px;
+}
+
+.Tab_down {
+    color: white;
+    background-image: url(IMG/tab_desactivo.gif);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    text-align: center;
+    height: 25px;
+    width: 200px;
+}
+
+a.btnConfirmar {
+    display: inline-block;
+    background-size: 91px 18px;
+    width: 91px;
+    padding-left: 30px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btnConfirmar {
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_confirmar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 20px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.MenuContexto {
+    background: #E6F2FA;
+    color: #1262A6;
+    font-size: 11px;
+    text-decoration: none;
+    border: 1px solid #1262A6;
+    font-weight: normal;
+    padding-left: 2px;
+    width: 300px;
+}
+
+.MenuContexto_Hover {
+    background: #F8980D;
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: normal;
+    padding-left: 2px;
+    width: 300px;
+}
+
+.MenuContexto_Nivel1 {
+    /* background: url(img/Opciones.gif) no-repeat center bottom; */
+    background-color: white;
+    color: #05518E;
+    font-size: 11px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.MenuContexto_Nivel1_Hover {
+    /* background: url(img/Opciones.gif) no-repeat center bottom; */
+    background-color: #F8980D;
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.MenuContexto_Nivel2 {
+    background: #E6F2FA;
+    color: #05518E;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: normal;
+    padding-right: 2px;
+    width: 300px;
+}
+
+.MenuContexto_Nivel2_Hover {
+    background: #F8980D;
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: normal;
+    padding-right: 2px;
+    width: 300px;
+}
+
+/* ESTILOS DEL ANTIGUO MENU */
+
+.MenuItemHi2nd {
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    /* Texto Menu */
+    background-color: #6499C1;
+    /* Fondo efecto down --- gainsboro; */
+    text-decoration: none;
+}
+
+.MenuItem2nd {
+    font-size: 10px;
+    color: white;
+    background-color: #226DA7;
+    /* Desplegable Menu principal */
+    text-decoration: none;
+}
+
+.MenuItemHi1st {
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.MenuItem1st {
+    font-weight: bold;
+    font-size: 10px;
+    color: black;
+    background-color: red;
+    text-decoration: none;
+}
+
+.MenuItemHi {
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    background-color: #E18133;
+    /* Efecto down */
+    text-decoration: none;
+}
+
+.MenuItem {
+    font-size: 10px;
+    color: #226DA7;
+    background-color: white;
+    text-decoration: none;
+}
+
+.MenuBorder {
+    background-color: #226DA7;
+}
+
+/* ESTILOS DE menu MILONIC */
+
+.Menu3ItemNode {
+    background-color: #698bba;
+    color: white;
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-decoration: none;
+    /* elimina el subrayado de los menus */
+}
+
+.Menu3ItemNode {
+    background-color: #226da7;
+    color: white;
+    border: 1px solid #d3e2ed;
+    padding: 2px;
+    text-decoration: none;
+}
+
+.Menu3Item {
+    background-color: #d5e5f1;
+    color: #226da7;
+    border: 1px solid #226da7;
+    padding: 2px;
+    text-decoration: none;
+}
+
+.Menu3ItemHover {
+    background-color: #e18133;
+    color: white;
+    border: solid 1px black;
+    padding: 2px;
+    text-decoration: none;
+}
+
+.DialogBox,
+.DialogHandle {
+    border: 1px solid #aaa;
+}
+
+.DialogBox {
+    font-size: 10px;
+    background-color: white;
+}
+
+.DialogHandle {
+    font-size: 12px;
+    cursor: move;
+    height: 14px;
+    border-width: 0px 0px 1px 0px;
+    background: #666;
+    color: #eee;
+}
+
+.DialogBackground {
+    background-color: Gray;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+.DialogBody {
+    padding: 10px;
+}
+
+.Menu3ItemNodeXS {
+    background-color: #698bba;
+    color: white;
+    border: 1px solid gray;
+    padding: 1px;
+}
+
+.Menu3ItemXS {
+    background-color: #d3dce5;
+    text-decoration: none;
+    color: #226DA7;
+    border: 1px solid gray;
+    padding: 1px;
+}
+
+.Menu3ItemHoverXS {
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    padding: 1px;
+}
+
+/* Estilos Menu de Contexto*/
+
+.MenuTxt3ItemNode {
+    background-color: #f6f9fb;
+    color: #698bba;
+    border: solid 1px #000080;
+    padding: 2px;
+}
+
+.MenuTxt3Item {
+    padding: 1.5px;
+    background-color: #f6f9fb;
+    color: #698bba;
+    border: solid 1px #d5e5f1;
+}
+
+.MenuTxt3ItemHover {
+    padding: 1.5px;
+    background-color: #fef5e7;
+    color: #698bba;
+    border: solid 1px #e18133;
+}
+
+/*
+ * Estilos nuevos Sonda.NET mejoras 2011
+ */
+
+.popup {
+    z-index: 9999;
+    position: absolute;
+    border: 2px solid gray;
+    text-align: center;
+    background: #000000;
+    padding: 4px;
+}
+
+.UserControlPaginadoTitulo {
+    color: #000000;
+    text-decoration: none;
+    background-color: #F2B53E;
+    text-align: center;
+    border: solid 1px #FFFFFF;
+    padding: 2px;
+}
+
+.UserControlPaginadoTotalizador {
+    color: #000000;
+    text-decoration: none;
+    background-color: #D5E5F1;
+    text-align: right;
+    padding: 2px;
+    border: solid 1px white;
+}
+
+.TablaFila {
+    padding: 0px;
+    margin: 0px;
+    border-collapse: collapse;
+}
+
+/*
+ * Estilos JQuery UI adaptados para FIN700
+ */
+
+/* DropDownList - Autocompletado */
+
+.ui-autocomplete {
+    cursor: pointer;
+    position: absolute;
+}
+
+* html .ui-autocomplete {
+    width: 1px;
+}
+
+ul.ui-autocomplete {
+    margin: 0;
+    padding: 2px;
+    background-color: white;
+    border: solid 1px gray;
+    list-style: none outside none;
+    font-size: 11px;
+    text-decoration: none;
+    border-color: #ECE9D8;
+    border-width: 1px;
+}
+
+.ui-autocomplete-input {
+    font-size: 11px;
+    text-decoration: none;
+    border-color: #ECE9D8;
+    border-width: 1px;
+}
+
+.ui-helper-hidden-accessible {
+    position: absolute;
+    left: -999em;
+}
+
+.texto,
+.numero,
+.custom-combobox-input {
+    font-size: 0.8em;
+    text-decoration: none;
+    /*border: none; 2664*/
+    background-color: #e8eaef;
+    padding: 1px 2px;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 0px 0px 0px 1px #ddd inset;
+}
+
+.DataGridTotalizador {
+    color: #000000;
+    text-decoration: none;
+    background-color: #D5E5F1;
+    text-align: right;
+    padding: 2px;
+    border: solid 1px white;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header,
+.ui-state-hover,
+.ui-state-focus,
+.ui-widget-content,
+.ui-state-focus,
+.ui-widget-header,
+.ui-state-focus {
+    border: 1px solid #999999/*{borderColorHover}*/
+    ;
+    font-weight: normal/*{fwDefault}*/
+    ;
+    color: #212121/*{fcHover}*/
+    ;
+}
+
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+    color: #212121/*{fcHover}*/
+    ;
+    text-decoration: none;
+}
+
+.custom-combobox {
+    POSITION: relative;
+    WIDTH: 100px;
+    DISPLAY: inline-block
+}
+
+.custom-combobox-toggle {
+    POSITION: absolute;
+    width: 15px;
+    height: 14px;
+    MARGIN-TOP: 3px;
+    MARGIN-LEFT: 1px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    horizontal-align: middle;
+}
+
+.custom-combobox-input {}
+
+.ui-widget {
+    BACKGROUND-COLOR: rgb(255, 255, 255);
+    FONT-SIZE: 11px;
+}
+
+.ui-helper-hidden-accessible {
+    display: none
+}
+
+.ui-autocomplete {
+    height: 200px
+}
+
+.ui-menu {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    display: block;
+    height: 200px;
+    overflow: scroll;
+}
+
+/* 20160119 JAL modificaciones multinavegador */
+
+p {
+    margin: 0;
+}
+
+#dummyKendoWindow .rwCorner,
+#dummyKendoWindow .rwTopResize,
+#dummyKendoWindow .rwFooterCenter,
+#dummyKendoWindow .rwTitlebar {
+    display: none !important;
+}
+
+#dummyKendoWindow .rwTitlebar {
+    background-position: 0 -6px !important;
+}
+
+/* 20160510 JAL Correcciones multinavegador */
+
+input[type=submit]:disabled,
+button:disabled {
+    color: #808080;
+}
+
+select:disabled {
+    background-color: #EBEBE4;
+}
+
+.invisible {
+    display: none;
+}
+
+/* 20161013 JAL Correcciones multinavegador */
+
+/* deja fija la barra vertical, reserva el espacio, para evitar movimientos de la pantalla cuando aparece esta barra, en particular con el selector de fecha  */
+
+body {
+    overflow-y: scroll;
+}
+
+.TablaPaginada {
+    /* border-color: Lightgrey; */
+}
+
+.TablaPaginada tr .DataGridItem td {
+    border-left-color: Lightgrey;
+    border-right-color: Lightgrey;
+    border-bottom-color: transparent;
+    border-top-color: Lightgrey;
+}
+
+.TablaPaginada tr .DataGridAlternatingItem td {
+    border-left-color: Lightgrey;
+    border-right-color: Lightgrey;
+    border-bottom-color: transparent;
+    border-top-color: Lightgrey;
+}
+
+.TablaPaginada tr td {
+    border-right: 1px solid white;
+    white-space: nowrap;
+    padding: 0px 10px;
+    border-bottom: 1px solid white;
+}
+
+.TablaPaginada tr.DataGridTitulo td{
+    border: none;
+    padding-left: 0px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.tablecontenido1 table {
+    border: none;
+}
+
+textarea {
+    /* resize: none; */
+}
+
+#infoBar {
+    /*position: absolute; 2679*/
+    top: 10px;
+    left: 20px;
+}
+
+#infoBar span {
+    color: #888;
+    font-size: 12px;
+}
+
+#infoBar+table {
+    margin-top: 10px;
+}
+
+.home-index {
+    width: 600px;
+    margin: 20px auto 0 auto;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);*/
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #236BAA;
+    padding: 0px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+.home-index h3 {
+    background-color: #236BAA;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: left;
+    background-image: url(img/acceso_header.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    margin: 0px 0px 20px 0px;
+}
+
+.home-index a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 50px;
+    transition: all 150ms ease-in-out;
+    font-weight: bold;
+}
+
+.home-index a:hover {
+    opacity: 0.8;
+}
+
+.home-index a p {
+    color: #236BAA;
+    margin-bottom: 20px;
+}
+
+#logout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #236BAA;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+#logout p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#logout .botones {
+    text-align: center;
+}
+
+#logout .botones input {
+    display: inline;
+    cursor: pointer;
+}
+
+#bg-login{
+    position: absolute;
+    top: 0px;
+    left: 0px;   
+    width: 100%;
+    height: 100vh !important;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#bg-login span.bg-img{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bg-login span.bg-overlay{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 21%, rgba(255,255,255,0) 68%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 21%,rgba(255,255,255,0) 68%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 21%,rgba(255,255,255,0) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#bg-login span.bg-img.pag-1-1{
+    background-image: url("img/2018/bg/bg_pag1_op1.jpg");
+}
+
+#bg-login span.bg-img.pag-1-2{
+    background-image: url("img/2018/bg/bg_pag1_op2.jpg");
+}
+
+#bg-login span.bg-img.pag-2-1{
+    background-image: url("img/2018/bg/bg_pag2_op1.jpg");
+}
+
+#login {
+    position: relative;
+    width: 100%;
+    height: 100vh !important;
+    /* background-image: url(img/fondo-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    overflow-y: hidden;
+    z-index: 2;
+}
+
+#login h2 {
+    margin: 0px;
+}
+
+#login figure {
+    position: relative;
+    margin: 50px 0px 0px 20px;
+    width: 140px;
+}
+
+#login figure img {
+    display: block;
+    width: 100%;
+}
+
+#login figure.logo-fin700 {
+    width: 300px;
+    position: absolute;
+    top: -60px;
+    right: 30px;
+}
+
+#login figure.logo-sonda {
+    position: absolute;
+    width: 140px;
+    bottom: 50px;
+    right: 50px;
+}
+
+#login #form-login {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    background-color: rgba(255,255,255,0.7);
+    width: 300px;
+    padding: 5px 20px 20px 20px;
+    border-radius: 15px;
+    border: 2px solid #236baa;
+}
+
+#login #form-login #login-titulo {
+    margin: 0px auto 20px auto;
+    padding-top: 20px;
+    width: 220px;
+}
+
+#login #form-login #login-titulo img{
+    float: left;
+    margin-right: 0px;
+    width: 15px;
+    margin-top: 4px;
+}
+
+#login #form-login #login-titulo h2 {
+    color: black;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    display: inline;
+}
+
+#login #form-login #errores span {
+    display: block;
+    color: #460e0e;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#login #form-login label {
+    display: block;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#login #form-login label::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    display: block;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+}
+
+#login #form-login label[for="TxtIdPersona"]::after {
+    background-image: url(img/2018/ico_usuario.png);
+    background-size: 30px;
+    background-position: 5px 0px;
+}
+
+#login #form-login label[for="TxtClave"]::after {
+    background-image: url(img/2018/ico_password.png);
+    background-size: 30px;
+    background-position: 5px 3px;
+}
+
+#login #form-login input[type="text"],
+#login #form-login input[type="password"] {
+    position: relative;
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid grey;
+    width: calc(100% - 50px);
+    height: 25px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: black;
+    border-radius: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#login #form-login #btnRecuperarClave {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin: 5px auto 0px auto;
+    border-radius: 3px;
+    width: 90%;
+    transition: all 150ms ease-in-out;
+}
+
+#login #form-login #btnRecuperarClave:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#login #form-login #btnRecuperarClave span {
+    font-size: 10px;
+    display: block;
+    color: #fff;
+    padding: 5px;
+}
+
+#login #form-login input[type="submit"]:not(.mayor2) {
+    display: block;
+    background-color: #236BAA;
+    width: 100%;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#login #form-login input[type="submit"] {
+    background-image: none;
+    height: 38px;
+}
+
+#login #form-login input[type="submit"]:hover {
+    background-color: #337ec1;
+}
+
+table td select{
+    font-size: 0.8em;
+    text-decoration: none;
+    border: none;
+    background-color: #e8eaef;
+    padding: 0px 2px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 0px 0px 0px 1px #ddd inset;
+}
+
+.btnSeleccionarTodos{
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_sel_todos.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 40px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.btnLimpiarSel{
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_limpiar_sel.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 40px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.btnReasignar{
+    background-color: transparent;
+    background-image: url(img/2018/btn/ico_reasignar.png);
+    border: none;
+    text-transform: none;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: right;
+    background-size: 30px;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    padding: 25px 5px 5px 5px;
+    margin: 15px 20px 0px 0px;
+    cursor: pointer;
+}
+
+iframe[name="iframe_contenido"]{
+    height: 100%;
+    border: none;
+    margin-top: 10px;
+}
+
+/* ESTILOS INDEX*/
+.tablaIndex {width: 100%;border:1px solid #428BCA}
+.TituloIndex {color:#FFFFFF;font-family:Trebuchet MS;font-size:25px; background-color: #428BCA; padding-top: 10px; padding-bottom: 10px; vertical-align:middle; line-height: 40px ;padding-left: 10px; } 
+.trIndexIconos{text-align: center;  padding-top: 30px; padding-bottom: 30px; padding-left:10px; padding-right:10px;}
+.trIndexEtiqueta{text-align: center;font-family:Trebuchet MS;font-size:18px;color: #428BCA;}
+.logoSondaIndex{vertical-align:middle;line-height:25px;font-size:25px; display:inline-block;margin-right:30px;}
+.imgIndex{ border: none; width:58px; height:56px;}
+
+/* Estilo propios de SAPNET 11-08-2006 PTC */
+.SapRSubTitulo {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px;  font-weight: bold; color: #ff0000; text-decoration: none; }
+.SapRNotaMediana {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #ff0000; text-decoration: none;}
+.sapbrerror {background-color:#cc0000; font-family:Verdana,Arial, Helvetica, sans-serif; text-decoration:none; font-size: 12px; font-weight: bold; color: #ffffff;}
+/* Incorporados para SAPNET 14/08/2006 PTC */
+.SapNombreCampo {text-align:right;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color:#000000; text-decoration: none;}
+.SapNombreCampoCenter {text-align:center;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color:#000000; text-decoration: none;}
+.Base {}

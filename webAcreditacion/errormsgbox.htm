@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Error</title>
+		<meta content="Microsoft Visual Studio.NET 7.0" name="GENERATOR">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="Styles.css" type="text/css" rel="stylesheet">
+		<META http-equiv="Pragma" content="no-cache">
+		<script language="javascript" id="clientEventHandlersJS">
+
+function lblMostrarDetalles_onclick() {
+    var aux = lblDescripcion.clientHeight;
+    if (aux < 103) aux = 103;
+	dialogHeight = (300 + 50 + 65 + aux) + "px";
+	lblMostrarDetalles.innerHTML = "";
+	dialogTop = ((parseInt(window.screen.height) - parseInt(dialogHeight))/2) +"px";
+}
+
+function ajustarAlto() {
+	var aux = lblDescripcion.clientHeight;
+    if (aux < 103) aux = 103;
+	dialogHeight = (65 + aux) + "px";
+	dialogTop = ((parseInt(window.screen.height) - parseInt(dialogHeight))/2) +"px";
+	window.scrollTo(0,0);
+}
+		</script>
+	</head>
+	<body bottomMargin="0" leftMargin="0" topMargin="0" scroll="no" rightMargin="0">
+		<TABLE id="Table1" cellSpacing="0" cellPadding="0" width="500" border="0">
+			<TR>
+				<td>
+					<TABLE id="Table3" cellSpacing="0" cellPadding="0" width="500" border="0" style="WIDTH: 500px;">
+						<TR>
+							<TD style="WIDTH: 48px; HEIGHT: 103px;" vAlign="center" align="middle"><IMG id="imgSeveridad" src="img/msgbox/error.gif"></TD>
+							<TD style="WIDTH: 420px; HEIGHT: 103px;" vAlign="center" id="lblDescripcion" class="NombreCampo"></TD>
+						</TR>
+					</TABLE>
+				</td>
+			</TR>
+			<TR>
+				<TD vAlign="center" align="middle" width="20%" colSpan="3" height="35">
+					<TABLE id="Table2" height="30" cellSpacing="0" cellPadding="0" width="100%" border="0">
+						<TR>
+							<TD width="30%"></TD>
+							<TD vAlign="center" align="middle" width="40%">
+								<P><INPUT id="btnAceptar" onclick="window.close();" type="button" value="Aceptar" name="Button1"></P>
+							</TD>
+							<TD width="30%">
+								<DIV language="javascript" class="NombreCampo" id="lblMostrarDetalles" style="PADDING-RIGHT: 5px; DISPLAY: inline; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; WIDTH: 100%; PADDING-TOP: 5px" onclick="return lblMostrarDetalles_onclick()" ms_positioning="FlowLayout"></DIV>
+							</TD>
+						</TR>
+					</TABLE>
+				</TD>
+			</TR>
+			<TR>
+				<TD vAlign="center" align="middle" colSpan="3" height="35"><textarea id="lblErrorCompleto" style="DISPLAY: inline; FONT-SIZE: xx-small;  WIDTH: 480px; FONT-FAMILY: Arial; HEIGHT: 300px"></textarea>
+					<DIV class="NombreCampo" id="lblStatusBarText" style="DISPLAY: inline; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; WIDTH: 100%; PADDING-TOP: 10px" ms_positioning="FlowLayout"></DIV>
+				</TD>
+			</TR>
+		</TABLE>
+		<script>
+			var sData = dialogArguments; 
+
+			if (typeof(sData.eDescripcionHTML) != "undefined" && sData.eDescripcionHTML!= "") {
+				lblDescripcion.innerHTML =  sData.eDescripcionHTML;
+			}
+			
+			if (typeof(sData.eDescripcion) != "undefined" && sData.eDescripcion!= "") {
+				lblDescripcion.innerHTML = lblDescripcion.innerHTML + "<strong>Descripci&oacute;n: </strong>" + sData.eDescripcion;
+			}
+			
+			lblDescripcion.style.visibility = "visible";
+			
+			if (typeof(sData.eErrorCompleto) != "undefined"  && sData.eErrorCompleto != "") {
+					var aux = sData.eErrorCompleto; 
+					aux = aux.replace(/-=NewLine=-/g, String.fromCharCode(13,10));
+					aux = aux.replace(/-=Slash=-/g, "\\");
+					lblErrorCompleto.innerText = aux;
+					lblMostrarDetalles.innerHTML = "<u><strong>Mostrar detalles</u></strong>"
+			} 
+			
+			if (typeof(sData.eProceso) != "undefined" && sData.eProceso!= "") {
+					lblDescripcion.innerHTML = lblDescripcion.innerHTML + "<br><strong>Proceso de negocio: </strong>" + sData.eProceso;
+			}
+						
+			if (typeof(sData.eDetalle) != "undefined" && sData.eDetalle!= "") {
+					lblDescripcion.innerHTML = lblDescripcion.innerHTML + "<br><strong>Detalle: </strong>" + sData.eDetalle;
+			}
+						
+			if (typeof(sData.statusBarText) != "undefined" && sData.statusBarText != "") {
+					lblStatusBarText.innerHTML = "<strong>Aplicaci&oacute;n: </strong>" + sData.statusBarText.replace(/,/g,", ");
+					lblStatusBarText.style.visibility = "visible";
+			} else document.getElementsByName["lblStatusBarText"].removeNode();
+						
+
+			var txtCodigo = "";			
+			if (typeof(sData.eCodigo) != "undefined") {
+				
+				if (sData.eCodigo!= "") txtCodigo = txtCodigo + "<strong>C&oacute;digo: </strong>" + sData.eCodigo;
+				if (typeof(sData.eSeveridad) != "undefined")
+					if (sData.eSeveridad!= "") {
+						txtCodigo = txtCodigo + "&nbsp;<strong>Severidad: </strong>" + sData.eSeveridad;
+						imgSeveridad.src = "img/severidad/sev" + sData.eSeveridad + ".gif";
+					}
+				if (typeof(sData.eTipo) != "undefined")
+					if (sData.eTipo!= "") txtCodigo = txtCodigo + "&nbsp;<strong>Tipo: </strong>" + sData.eTipo;
+			}
+			if (txtCodigo != "") {
+				lblDescripcion.innerHTML = lblDescripcion.innerHTML + "<br>" + txtCodigo;
+			}
+			setTimeout("ajustarAlto()",1);
+		</script>
+	</body>
+</html>

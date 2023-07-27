@@ -1,0 +1,35 @@
+<TREENODES>
+
+	<treenode Text="Integración Contable">
+		<treenode Text="Generar Certificados" NavigateUrl="" />
+		<treenode Text="Mantenedor" NavigateUrl="" />
+		<treenode Text="Consultas" NavigateUrl="default.aspx?url=webIntegracionContable/ineAcreditacionDiario" />
+		<treenode Text="Informes Adicionales" NavigateUrl="" />
+		<treenode Text="Cierre Certificados" NavigateUrl="" />
+	</treenode>
+	<treenode Text="Integración Control Recaudación">
+		<treenode Text="Carga Planilla">
+			<treenode Text="Planilla Tesoreria" NavigateUrl="default.aspx?url=webIntegracionContable/inePlanillaTesoreria" />
+			<treenode Text="Detalle Planilla Tesoreria" NavigateUrl="default.aspx?url=webIntegracionContable/ineDetallePlanillaTesoreria" />
+		</treenode>
+		<treenode Text="Planilla Recaudación">
+			<treenode Text="Generar Planilla" NavigateUrl="" />
+			<treenode Text="Recaudación" NavigateUrl="" />
+			<treenode Text="Lotes Acreditados Fecha Contable" NavigateUrl="default.aspx?url=webIntegracionContable/ineLotesAcreditadosRecaudacion" />
+		</treenode>
+		<treenode Text="Generacion Informes">
+			<treenode Text="Informe Carga" NavigateUrl="" />
+			<treenode Text="Recaudación" NavigateUrl="default.aspx?url=webIntegracionContable/ineTestReportes" />
+		</treenode>
+	</treenode>
+	<treenode Text="Integración Contable Memos">
+		<treenode Text="Generación Memos" NavigateUrl="" />
+	</treenode>
+	<treenode Text="Integración Contable Parametros">
+		<treenode Text="Grupos" NavigateUrl="" />
+		<treenode Text="Lineas Certificados" NavigateUrl="" />
+		<treenode Text="Certificados" NavigateUrl="" />
+		<treenode Text="Relacion Cert/Cod Mod" NavigateUrl="" />
+		<treenode Text="Memos" NavigateUrl="" />
+	</treenode>
+</TREENODES>

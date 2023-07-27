@@ -1,0 +1,1 @@
+<%@ Control Language="vb" AutoEventWireup="false" Codebehind="WorkflowBodyVentanaBusqueda.ascx.vb" Inherits="Sonda.Net.Nxt.Workflow.WEB.WorkflowBodyVentanaBusqueda" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
